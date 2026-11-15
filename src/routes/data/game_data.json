@@ -1,18 +1,21 @@
 {
     "judge_name": {
     "type": "name",
-    "value": ""
+    "usernum": "",
+    "value": "Amara"
   },
     "verdict": {
     "type": "verdict",
-    "value": "Not guilty"
+    "value": ""
   },
   "prosec_name": {
     "type": "name",
-    "value": ""
+    "usernum": "",
+    "value": "Grace"
   },
   "defend_name": {
     "type": "name",
-    "value": ""
+    "usernum": "",
+    "value": "Diana"
   }
 }

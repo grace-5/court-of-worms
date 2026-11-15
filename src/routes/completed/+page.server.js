@@ -14,8 +14,20 @@ export async function load() {
         "utf-8"
     );
 
+    const gameDataRaw = await fs.readFile(
+        path.join(dataDir, "game_data.json"),
+        "utf-8"
+    );
+
     const madlibs = JSON.parse(madlibsRaw);
     const script = JSON.parse(scriptRaw);
+    const gameData = JSON.parse(gameDataRaw);
+
+    // Combine both data sources
+    const allMadlibs = {
+        ...madlibs,
+        ...gameData
+    };
 
     const completedScript = {
         ...script,
@@ -23,7 +35,14 @@ export async function load() {
             ...section,
             paragraphs: section.paragraphs.map(paragraph =>
                 paragraph.replace(/\{(\w+)\}/g, (match, key) => {
-                    return madlibs[key]?.value ?? match;
+                    const value = allMadlibs[key]?.value;
+
+                    if (value == null || value.trim() === "") {
+                        console.warn(`Missing Mad Lib value: ${key}`);
+                        return `[${key}]`;
+                    }
+
+                    return value;
                 })
             )
         }))
