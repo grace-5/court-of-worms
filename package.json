@@ -13,7 +13,9 @@
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"build-bulma": "sass --load-path=node_modules my-bulma-project.scss ./src/my-bulma-project.css",
+		"start": "npm run build-bulma -- --watch"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
@@ -25,5 +27,12 @@
 		"prettier": "^3.8.3",
 		"prettier-plugin-svelte": "^4.1.0",
 		"vite": "^8.3.0"
+	},
+	"dependencies": {
+		"bulma": "^1.0.4",
+		"sass": "^1.108.2",
+		"svelte-sound": "^0.6.0",
+		"partysocket": "^1.3.0",
+		"sass": "^1.108.2"
 	}
 }

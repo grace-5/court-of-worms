@@ -4,9 +4,30 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
+		<link rel="stylesheet" href="./src/my-bulma-project.css">
+		<style>
+			.box-it{
+				background-color: rgb(255, 253, 228);
+				/* border: 3px solid rgb(96, 80, 24); */
+				margin-top: 5rem;
+				margin-left: 10rem;
+				margin-right: 10rem;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+			}	
+
+			html{
+				background-image: url('./src/lib/assets/px-c.png');
+				background-repeat: no-repeat;
+  				background-size: cover;
+			}
+		
+
+		</style>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+		<div class="box-it">
+			<div style="display: contents">%sveltekit.body%</div>
+		</div>
 	</body>
 </html>
