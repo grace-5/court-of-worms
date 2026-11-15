@@ -3,7 +3,10 @@
 import { onMount } from 'svelte';
 import background1 from '#lib/assets/JoinPt1.ogg';
 import background2 from '#lib/assets/JoinPt2.ogg';
+<<<<<<< HEAD
 import worm from '#lib/assets/naked_worm.gif';
+=======
+>>>>>>> 7e32757746dfb4e02be04be84f63737ed2f387dc
   
 import { goto } from '$app/navigation';
 
@@ -63,7 +66,11 @@ function joinLobby() {
 	</div>
 
 	<div class="field has-addons">
+<<<<<<< HEAD
 		<input class="input" type="text" bind:value={roomId} placeholder="Enter room code" />
+=======
+		<input class="input" type="text" autocomplete="off" bind:value={roomId} placeholder="Enter room code" />
+>>>>>>> 7e32757746dfb4e02be04be84f63737ed2f387dc
 		<div class="control is-expanded">
 
 			<button onclick={joinLobby} class="button is-primary">Join Game</button>

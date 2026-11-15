@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -52,3 +53,12 @@ export async function load() {
         script: completedScript
     };
 }
+=======
+import { loadCompletedScript } from '../../lib/server/completed-script.js';
+
+export async function load() {
+	return {
+		script: await loadCompletedScript()
+	};
+}
+>>>>>>> 7e32757746dfb4e02be04be84f63737ed2f387dc

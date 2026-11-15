@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 {
   "sections": [
@@ -62,3 +63,215 @@
     }
   ]
 }
+=======
+{
+	"sections": [
+		{
+			"speaker": "Judge",
+			"paragraphs": [
+				"All rise, the Superior Court of Worm is now in session, the Honorable {judge_name} presiding.",
+				"Please be seated. This is a criminal case brought by Worm {name1}, charging the defendant, Worm {name2}, with theft in the first degree.",
+				"Worm {name1} claims that Worm {name2}, with an intent to deprive the owner of its property, {verb_past1} the {noun1} and {verb_past2} away with it {adverb1}. The stolen {noun1} was valued at ${number1} and was allegedly worth more to Worm {name1} than a {noun2}.",
+				"Worm {name1} claims that upon discovering the theft, they {verb_past3} {adverb2}, suffering emotional damage of {adjective1} proportions.",
+				"Worm {name2} admits to taking the {noun1} but denies having the intent to commit theft. The defendant claims that they believed they had permission to take the {noun1} and were merely attempting to protect it from {adjective2} {plnoun1}.",
+				"In fact, Worm {name2} claims that they had to {verb_base1} the {noun1} while engaging in a {adjective3} altercation with Worm {name1}, who allegedly attempted to {verb_base2} it {adverb3}.",
+				"We now will begin the case. The prosecuting attorney, {prosec_name}, on behalf of Worm {name1}, will go first."
+			]
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument as to why the defendant is guilty."
+		},
+		{
+			"speaker": "Judge",
+			"paragraphs": ["Now the defense, {defend_name}, on behalf of Worm {name2}, may speak."]
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument as to why the defendant is not guilty."
+		},
+		{
+			"speaker": "Prosecution",
+			"paragraphs": ["The prosecution calls the witness, Worm {name3}, to the stand."]
+		},
+		{
+			"speaker": "Witness 1",
+			"paragraphs": [
+				"On the day of the crime, I was {verb_ing1} {adverb4} near Worm {name1}'s {place1} estate when I noticed Worm {name2} {verb_ing2} through the front gate.",
+				"I immediately {verb_past4} behind a {noun3} to observe the situation. Worm {name2} appeared to be {verb_ing3} the estate {adverb5}, which I found extremely {adjective4}.",
+				"Suddenly, I heard a {adjective5} crash. Worm {name2} had apparently {verb_past5} into the wall while attempting to {verb_base3} the {noun1} out of the estate.",
+				"I watched as Worm {name2} {verb_past6} the {noun1} into their {bodypart1} and {verb_past7} toward the exit {adverb6}. I was absolutely {adjective6}.",
+				"I considered calling the police, but then I saw Worm {name1} {verb_ing4} toward the estate. I decided to {verb_base4} behind a nearby {noun4} because I did not want to get involved.",
+				"To be completely honest, I was also going through a {adjective7} divorce with Worm {name1}. I had spent the entire week {verb_ing5} about the situation and was simply too {adjective8} to intervene.",
+				"However, I can confirm that Worm {name2} was not authorized to enter the estate. I distinctly remember seeing a sign that said, \"{adjective9} {plnoun2} are forbidden from entering!\"",
+				"I am absolutely certain that Worm {name2} committed the crime. I even saw them {verb_ing6} the {noun1} while {verb_ing7} {adverb7}. It was the most {adjective10} thing I had ever witnessed."
+			]
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument as to why the testimony does not prove the defendant guilty."
+		},
+		{
+			"speaker": "Defense",
+			"paragraphs": ["The defense calls the witness, Worm {name4}, to the stand."]
+		},
+		{
+			"speaker": "Witness 2",
+			"paragraphs": [
+				"I was spending time with Worm {name2} and Worm {name1} a week before the alleged theft. We were all {verb_ing8} {adverb8} in Worm {name1}'s {place2} estate when Worm {name1} suddenly {verb_past8} the {noun1} onto the table.",
+				"Worm {name1} clearly stated that Worm {name2} had permission to borrow the {noun1}. In fact, Worm {name1} said, \"You may {verb_base5} this {adjective11} {noun1} whenever you wish!\"",
+				"Worm {name2} was so {adjective12} that they immediately {verb_past9} {adverb9}. We both agreed that the {noun1} was an incredibly {adjective13} object and that we needed to protect it from {plnoun3}.",
+				"We even formed a pact of brother and sisterhood. We solemnly swore before Our Worm Lord Above to {verb_base6} the {noun1} and never {verb_base7} it {adverb10}.",
+				"During the ceremony, Worm {name2} {verb_past10} a {noun5} into the air while I {verb_past11} {adverb11}. It was a deeply {adjective14} moment.",
+				"I simply cannot believe Worm {name1} would {verb_base8} us like this! They are clearly attempting to {verb_base9} their way into a {adjective15} payout through these {adjective16} accusations.",
+				"I would like to remind the court that Worm {name2} was merely {verb_ing9} the {noun1} as we had agreed. If anything, Worm {name2} deserves a medal for {verb_ing10} so {adverb12}.",
+				"I rest my case."
+			]
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument as to why the testimony does not prove the defendant innocent."
+		},
+		{
+			"speaker": "Judge",
+			"paragraphs": [
+				"Now, may the prosecution and defense engage in a classic tradition of the Worm Court—the worm back-and-forth, a battle to the death! Disclaimer: for legal reasons, there will be no death. Please prepare your arguments to convince me that you wiggle today in court for the right reasons.",
+				"The prosecution will make the first argument."
+			]
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter a short argument."
+		},
+		{
+			"speaker": "Judge",
+			"paragraphs": ["Now, please give your closing statements."]
+		},
+		{
+			"type": "turn",
+			"speaker": "Prosecution",
+			"role": "prosecution",
+			"prompt": "Enter your closing statement."
+		},
+		{
+			"type": "turn",
+			"speaker": "Defense",
+			"role": "defense",
+			"prompt": "Enter your closing statement."
+		},
+		{
+			"speaker": "Judge",
+			"paragraphs": ["Alright, allow the court time to deliberate."]
+		},
+		{
+			"type": "verdict",
+			"speaker": "Judge",
+			"prompt": "Choose the verdict."
+		},
+		{
+			"speaker": "Judge",
+			"paragraphs": ["The court finds the defendant, Worm {name2}, {verdict}!"]
+		}
+	]
+}
+>>>>>>> 7e32757746dfb4e02be04be84f63737ed2f387dc

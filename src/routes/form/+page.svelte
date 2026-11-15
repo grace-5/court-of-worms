@@ -4,6 +4,7 @@
     let { data } = $props();
 </script>
 
+<<<<<<< HEAD
 <MadLibsForm madlibs={data.madlibs} currentUser="user1" />
 
 
@@ -25,3 +26,6 @@
         </form>
     </container>
 </section>
+=======
+<MadLibsForm madlibs={data.madlibs} currentUser="user1" />
+>>>>>>> 7e32757746dfb4e02be04be84f63737ed2f387dc
