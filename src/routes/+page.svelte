@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import JoinRoom from './JoinRoom.svelte';
 </script>
 
