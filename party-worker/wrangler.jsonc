@@ -13,11 +13,11 @@
 	"upload_source_maps": true,
 	"durable_objects": {
 		"bindings": [
-			{"name" : "ChatServer", "class_name": "ChatServer"}
+			{"name" : "Lobby", "class_name": "Lobby"}
 		]
 	},
 	"migrations" : [
-		{"tag": "v1", "new_sqlite_classes": ["ChatServer"]}
+		{"tag": "v1", "new_sqlite_classes": ["Lobby"]}
 	]
 	/**
 	 * Smart Placement

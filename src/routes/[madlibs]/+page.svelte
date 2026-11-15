@@ -1,6 +1,5 @@
-<script>
 
-</script>
+
 <section class="section">
     <container class="container">
         <form method="post" action="?/enter">

@@ -10,11 +10,37 @@
 
 import { Server, routePartykitRequest } from "partyserver";
 
-export class ChatServer extends Server {
-	onMessage(sender, message) {
-		this.broadcast(message);
+export class Lobby extends Server {
+	players = new Map();
+
+	onConnect(conn) {
+		conn.send(JSON.stringify({
+			type: "sync",
+			players: Array.from(this.players.values())
+		}));
 	}
-}
+
+	onMessage(conn, message) {
+		const data = JSON.parse(message);
+
+		if(data.type === "join") {
+			this.players.set(conn.id, {id: conn.id, name: data.name});
+			this.broadcastState();
+		}
+	}
+
+	onClose(conn) {
+		this.players.delete(conn.id);
+		this.broadcastState();
+	}
+
+	broadcastState() {
+		this.broadcast(JSON.stringify({
+			type: "sync",
+			players: Array.from(this.players.values())
+		}))
+	}
+ }
 export default {
 	async fetch(request, env) {
 		return (
