@@ -75,10 +75,10 @@ function joinLobby() {
 <section class="section">
 
 <div class="hero-body is-flex is-flex-direction-column is-justify-content-flex-end is-align-items-flex-end">
-<button id="play" onclick={() => {playSound}}>
+<button id="play">
   Dance Party! (Music) ▶
 </button>
-<button id="stop" onclick={stopSound}> Stop ■</button>
+<button id="stop"> Stop ■</button>
 </div>
 </section>
 
