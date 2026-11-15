@@ -1,5 +1,4 @@
 <script>
-
 	// Hard coded for now
 	const judgeName = 'Judy';
 	const name1 = 'James';
@@ -30,7 +29,6 @@
 	const prosecName = 'the People';
 
 	const lines = [
-
 		`All rise, the Superior Court of Worm is now in session, the Honorable ${judgeName} presiding.`,
 		`Please be seated. This is a criminal case brought by Worm ${name1}, charging the defendant, 
          Worm ${name2}, with theft in the first degree.`,
@@ -45,38 +43,45 @@
 		`In fact, Worm ${name2} claims that they had to ${verbBase1} the ${noun1} while engaging in a 
         ${adjective3} altercation with Worm ${name1}, who allegedly attempted to ${verbBase2} it ${adverb3}.`,
 		`Judge: We now will begin the case. The prosecuting attorney, ${prosecName}, on behalf of Worm ${name1}, will go first.`
-
 	];
 
 	let currIndex = $state(0);
+	let isVisible = $state(true);
 
 	function nextLine() {
 		if (currIndex < lines.length - 1) {
 			currIndex += 1;
+		} else {
+			isVisible = false;
 		}
 	}
 </script>
 
 <section class="section">
 	<div class="container game-container">
-		<div class="text-box" role="button" tabindex="0" onclick={nextLine} onkeydown={(e) => e.key === 'Enter' && nextLine()}>
+		{#if isVisible}
+			<div
+				class="text-box"
+				role="button"
+				tabindex="0"
+				onclick={nextLine}
+				onkeydown={(e) => e.key === 'Enter' && nextLine()}
+			>
+				<p>{lines[currIndex]}</p>
 
-			<p>{lines[currIndex]}</p>
-
-			<span class="hint"> 
-                {currIndex < lines.length - 1 ? 'Click to continue' : 'End of script'}
-            </span>
-
-		</div>
+				<span class="hint">
+					{currIndex < lines.length - 1 ? 'Click to continue' : 'Click to close'}
+				</span>
+			</div>
+		{/if}
 	</div>
 </section>
 
 <style>
-
 	.game-container {
 		position: relative;
-        min-width: 20rem;
-        max-width: 30rem;
+		min-width: 20rem;
+		max-width: 30rem;
 		min-height: 26.5rem;
 	}
 
