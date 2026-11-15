@@ -1,0 +1,18 @@
+{
+    "judge_name": {
+    "type": "name",
+    "value": ""
+  },
+    "verdict": {
+    "type": "verdict",
+    "value": "Not guilty"
+  },
+  "prosec_name": {
+    "type": "name",
+    "value": ""
+  },
+  "defend_name": {
+    "type": "name",
+    "value": ""
+  }
+}
