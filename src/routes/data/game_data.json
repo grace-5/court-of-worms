@@ -2,7 +2,7 @@
     "judge_name": {
     "type": "name",
     "usernum": "",
-    "value": "Amara"
+    "value": ""
   },
     "verdict": {
     "type": "verdict",
@@ -11,11 +11,11 @@
   "prosec_name": {
     "type": "name",
     "usernum": "",
-    "value": "Grace"
+    "value": ""
   },
   "defend_name": {
     "type": "name",
     "usernum": "",
-    "value": "Diana"
+    "value": ""
   }
 }
