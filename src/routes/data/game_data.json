@@ -1,0 +1,21 @@
+{
+    "judge_name": {
+    "type": "name",
+    "usernum": "",
+    "value": "Amara"
+  },
+    "verdict": {
+    "type": "verdict",
+    "value": ""
+  },
+  "prosec_name": {
+    "type": "name",
+    "usernum": "",
+    "value": "Grace"
+  },
+  "defend_name": {
+    "type": "name",
+    "usernum": "",
+    "value": "Diana"
+  }
+}

@@ -20,7 +20,7 @@ onMount(() => {
     <container class="container">
         <form method="post" action="?/enter">
             <div class="field">
-                <h1 class="heading zooming-text">What's the verdict?</h1>
+                <label class="label">What's the verdict?</label>
                 <div class="button-container">
                     <button
                         class:selected={ruling === 'Guilty'}
@@ -40,7 +40,7 @@ onMount(() => {
                 </div>
                 
                 <div class="judge_ruling">
-                    <textarea class = "text_area"
+                    <textarea class="textarea"
                         bind:value={explanation}
                         placeholder="Explain your ruling (optional)">
                     </textarea>
@@ -72,7 +72,7 @@ onMount(() => {
     }
 
     .player2 {
-        background-color: #44aa44;
+        background-color: #44aaa5;
     }
 
     .player1.selected, .player2.selected {
@@ -85,33 +85,12 @@ onMount(() => {
         min-height: 150px;
         padding: 12px;
         font-size: 16px;
-        font-family: Arial, Helvetica, sans-serif;
         resize: vertical;
         box-sizing: border-box;
         border-radius: 5px;
     }
 
-    .heading {
-		font-size: 2em;
-        transform: translateY(-1em);
-	}
-
-    .zooming-text {
-    animation: zoom_bounce 1s ease-in-out infinite;
-    transform-origin: top left;
-    }
-
-    @keyframes zoom_bounce {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.2);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
+    
 
 </style>
 
