@@ -8,13 +8,13 @@ let audio;
 let ruling = $state('');
 let explanation = $state('');
 
-onMount(() => {
-    audio.play();
-});
+// onMount(() => {
+//     audio.play();
+// });
 
 </script>
-
-<audio bind:this={audio} src={background} loop></audio>
+<!-- 
+<audio bind:this={audio} src={background} loop></audio> -->
 
 <section class="section">
     <container class="container">
