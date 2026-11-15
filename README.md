@@ -1,3 +1,7 @@
+
+## Play the game!
+https://court-of-worms.vercel.app/
+
 ## To run app:
 
 npm install
